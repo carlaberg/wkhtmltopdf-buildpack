@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "wkhtmltopdf-buildpack"
+echo "This is the build directory $BUILD_DIR"
+echo "This is the build directory" $1
+exit 0
