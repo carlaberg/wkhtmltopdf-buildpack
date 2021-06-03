@@ -1,13 +1,5 @@
 #!/bin/sh
 
-echo "-----> Downloading wkhtmltopdf"
+echo "-----> Installing wkhtmltopdf"
 
-wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-rc/wkhtmltox_0.12.6-0.20200605.30.rc.faa06fa.focal_amd64.deb
-
-echo "-----> Handling missing depencies"
-
-apt-get update -y
-apt-get --assume-yes install -y xfonts-75dpi xfonts-base
-
-echo "-----> Installning wkhtmltopdf"
-apt install ./wkhtmltox_0.12.6-0.20200605.30.rc.faa06fa.focal_amd64.deb
+apt-get install -f wkhtmltopdf
