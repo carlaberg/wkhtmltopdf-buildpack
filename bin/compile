@@ -2,7 +2,7 @@
 
 echo "-----> Installing wkhtmltopdf"
 
-mkdir -p /var/cache/apt/archives/partial
+sudo mkdir -p /var/cache/apt/archives/partial
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
 dpkg -i wkhtmltox_0.12.6-1.focal_amd64.deb
 apt-get install -f
